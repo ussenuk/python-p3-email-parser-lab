@@ -15,19 +15,19 @@ class EmailAddressParser:
             target_string = re.findall(myre, target_string)
             # print(target_string)
 
-            joint_target_string = ' '.join(target_string)
+            # joint_target_string = ' '.join(target_string)
 
-            print(joint_target_string)
+            # print(joint_target_string)
 
-            email_list = re.split(r"\,|\s", joint_target_string)
-            unique_email = set(email_list)
+           # email_list = re.split(r"\,|\s", joint_target_string)
+            unique_email = set(target_string)
 
             # transform the dict to list
-            unique_list_email = list(unique_email)
+            # unique_list_email = list(unique_email)
 
         
 
-            sorted_unique_email= sorted(unique_list_email)
+            sorted_unique_email= sorted(unique_email)
 
 
             return sorted_unique_email
